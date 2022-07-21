@@ -14,6 +14,11 @@ int main(int argc, char * argv[])
         std::cout << argv[i] << '\n';
     }
 
+    sentry_capture_event(sentry_value_new_message_event(
+        /*   level */ SENTRY_LEVEL_INFO,
+        /*  logger */ "custom",
+        /* message */ "It works!"));
+
     sentry_close();
 
     return 0;
