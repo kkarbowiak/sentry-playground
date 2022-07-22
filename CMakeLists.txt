@@ -10,7 +10,7 @@ add_executable(${PROJECT_NAME}
     main.cpp)
 
 target_compile_options(${PROJECT_NAME} PRIVATE
-    -Wall -Wextra -Werror -pedantic-errors)
+    -Wall -Wextra)
 
 target_link_libraries(${PROJECT_NAME}
     sentry)
